@@ -22,4 +22,9 @@ AI logic analyzes note content to:
 - Classify notes
 
 ## Live Demo
-👉 https://your-netlify-link
+👉 [https://smartnoteappwithai.netlify.app/]
+
+
+## loom 
+https://www.loom.com/share/f90b2dfb8f6f42608616cc8484a42b53
+
