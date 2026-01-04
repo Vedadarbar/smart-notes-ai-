@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧠 Smart Notes AI</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🧠 Smart Notes AI</h1>
+
+    <div class="header-right">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search notes..."
+        oninput="searchNotes()"
+        class="search-bar"
+      />
+
+      <!-- DARK MODE BUTTON (FIXED) -->
+      <button onclick="toggleDark()" class="dark-btn">
+        🌙 Dark Mode
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- NOTE INPUT -->
+    <textarea
+      id="noteInput"
+      placeholder="✍️ Write your note here..."
+    ></textarea>
+
+    <!-- LANGUAGE SELECT (future use) -->
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="te">Telugu</option>
+      <option value="fr">French</option>
+    </select>
+
+    <!-- SAVE BUTTON -->
+    <button onclick="saveNote()" class="save-btn">
+      💾 Save Note
+    </button>
+
+    <!-- NOTES LIST -->
+    <div id="notesList"></div>
+
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>

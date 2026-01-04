@@ -1,0 +1,194 @@
+/* ===============================
+   RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+  color: #222;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ===============================
+   HEADER
+================================ */
+header {
+  background: #4f46e5;
+  color: white;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  background: #ffffff;
+  color: #4f46e5;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.save-btn {
+  margin-top: 10px;
+  background: #4f46e5;
+  color: white;
+}
+
+.dark-btn {
+  background: #111827;
+  color: white;
+}
+
+/* ===============================
+   MAIN CONTENT
+================================ */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   NOTES
+================================ */
+#notesList {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.note {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.note:hover {
+  transform: translateY(-2px);
+}
+
+.note h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.note p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.actions button {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+/* ===============================
+   HIGHLIGHT
+================================ */
+.highlighted {
+  border: 2px solid #facc15;
+}
+
+/* ===============================
+   DARK MODE
+================================ */
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark header {
+  background: #020617;
+}
+
+body.dark .search-bar {
+  background: #1e293b;
+  color: white;
+}
+
+body.dark textarea,
+body.dark select {
+  background: #020617;
+  color: white;
+  border: 1px solid #334155;
+}
+
+body.dark .note {
+  background: #020617;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+body.dark button {
+  background: #334155;
+  color: white;
+}
+
+body.dark .actions button {
+  background: #1e293b;
+  color: #e5e7eb;
+}
+
+body.dark .highlighted {
+  border-color: #eab308;
+}
